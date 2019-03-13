@@ -5,3 +5,6 @@ function myFunction() {
   if (video.paused) {
     video.play();
 };
+
+
+
