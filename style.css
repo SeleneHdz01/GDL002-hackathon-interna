@@ -102,7 +102,8 @@ input, select {
 }
 /* END OF CSS RESET */
 
-/*BOX-SIZING MODEL TO BORDER*/
+/*////////////BOX-SIZING MODEL TO BORDER///////////*/
+
 *, *:before, *:after {
     -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box; 
@@ -123,10 +124,16 @@ html,body{
     justify-content:center;
     align-items:center;
     position: fixed;
-    background-color: #474747b3;
     color: #ffff;
+    margin-bottom: 3rem;
+    background-color: #474747b3;
+
 }
 
+/*.video-overlay {
+           
+}
+*/
 footer {
     position: fixed;
     bottom: 0;
@@ -158,4 +165,30 @@ h2 {
 
 p {
     margin:1rem auto;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    button {
+        display: block;
+        margin: .5rem auto;
+        width: 110px;
+    }
+
+    footer {
+    background-color: #080505b3;
+    }
+
+
+.flex-center-all {
+    height:90%;
+}
+
+/*    .flex-center-all {
+   
+    margin-bottom: 3rem;
+}*/
+
 }
