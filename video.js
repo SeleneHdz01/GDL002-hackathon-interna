@@ -4,4 +4,4 @@ let btn = document.getElementById("myBtn");
 function myFunction() {
   if (video.paused) {
     video.play();
-}
+};
