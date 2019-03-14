@@ -194,7 +194,7 @@ p {
 
 .p-yellow {
     font-size: 1.25rem;
-    color: #000;
+    color: #fff;
     font-weight: 300;
 }
 
@@ -229,9 +229,10 @@ button img {
 }
 
 .buttons-container{
-    background-image: linear-gradient(45deg, #f7b500 25%, #ffd900 25%, #ffd900 50%, #f7b500 50%, #f7b500 75%, #ffd900 75%, #ffd900 100%);
+    /*! background-image: linear-gradient(45deg, #f7b500 25%, #ffd900 25%, #ffd900 50%, #f7b500 50%, #f7b500 75%, #ffd900 75%, #ffd900 100%); */
     background-size: 56.57px 56.57px;    
     padding: .25rem;
+    background-color: #00000061;
 }
 .flex-hor {
     display: flex;
@@ -318,6 +319,11 @@ p.header-title{
 
     .logo-img {
     max-width: 220px;
+    }
+
+    .buttons-container {
+        max-width: 200px;
+        margin: auto;
     }
 
 @-webkit-keyframes heartbeat {
