@@ -128,7 +128,7 @@ html,body{
     position: fixed;
     color: #ffff;
     margin-bottom: 3rem;
-    background-color: #000000e6;
+    background-color: #000000d1;
 
 }
 
@@ -155,19 +155,27 @@ footer {
 
 .logo-img {
     max-width: 250px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+            animation: heartbeat 2.5s ease-in-out infinite both;
+            
 }
 
 h1 {
     color: #fae602;
-    font-size: 4.5rem;
-    font-weight: 600;
+    font-size: 3.5rem;
+    font-weight: 300;
     margin: .5rem auto;
+}
+
+.h1-bold {
+    font-weight: 600;
 }
 
 h2 {
     font-size: 1.3rem;
     font-weight: 300;
     margin: 1rem auto;
+    line-height: 1.5rem;
 }
 
 p {
@@ -189,9 +197,6 @@ a {
     text-decoration: none;
 }
 
-/*a:hover {
-   color: #17b7c5;
-}*/
 
 button, button:before, button:after {
     border-radius: 2px;
@@ -200,29 +205,31 @@ button, button:before, button:after {
     font-size: 1.25rem;
     font-weight: 200;
     text-align: center;
-    width: 165px;
+    /*! width: 165px; */
     background-color: rgba(255,255,255,0);
 /*    margin: 0 .5rem;
 */}
+
+button:hover {
+
+    transform: translateY(-0.35rem);
+    transition: 0.45s;
+}
 
 button img {
     max-height:50px;
 }
 
-.btn-margin-reset {
-/*    margin-right: 0;
-*/}
-
-/*.btns-cont-flex {
+.buttons-container{
+    background-image: linear-gradient(45deg, #f7b500 25%, #ffd900 25%, #ffd900 50%, #f7b500 50%, #f7b500 75%, #ffd900 75%, #ffd900 100%);
+    background-size: 56.57px 56.57px;    
+    padding: .25rem;
+}
+.flex-hor {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between;
-}*/
-
-.buttons-container{
-    background-color: #ffea00c9; 
-    padding: .25rem;
+    justify-content: center;
 }
 
 /*.pink-btn {
@@ -246,14 +253,90 @@ button img {
     background-color: #000;
     }
 
+    .flex-center-all {
+        height:100%;
+    }
+    .flex-hor {
+        display: block;
+    }
 
-.flex-center-all {
-    height:100%;
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size:1rem;
+    }
+
+    .logo-img {
+    max-width: 220px;
+    }
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
 }
-
-/*    .flex-center-all {
-   
-    margin-bottom: 3rem;
-}*/
-
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
 }
