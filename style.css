@@ -1,0 +1,390 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////// END OF CSS RESET /////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+
+/*BOX-SIZING MODEL TO BORDER*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+  height:100%;
+  padding:0;
+  margin:0;
+  background-color: transparent;
+}
+
+.flex-center-all {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: fixed;
+    color: #ffff;
+    margin-bottom: 3rem;
+    background-color: #000000b5;
+
+}
+
+/*.video-overlay {
+           
+}
+*/
+
+.screen-2 {
+  background-color: #000;
+  height: 100vh;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #ffff;
+    font-size: .7rem;
+    margin: 0;
+    }
+
+#bckg-vid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.logo-img {
+    max-width: 250px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+            animation: heartbeat 2.5s ease-in-out infinite both;
+            
+}
+
+h1 {
+    color: #fae602;
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin: .5rem auto;
+}
+
+.h1-bold {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 1rem auto;
+    line-height: 1.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+    margin:1rem auto;
+    line-height: 1.35rem;
+}
+
+.p-yellow {
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: 300;
+}
+
+a {
+    font-weight: 300;
+    color: #ff45ff;
+    border: none;
+    text-decoration: none;
+}
+
+
+button, button:before, button:after {
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 200;
+    text-align: center;
+    /*! width: 165px; */
+    background-color: rgba(255,255,255,0);
+/*    margin: 0 .5rem;
+*/}
+
+button:hover {
+
+    transform: translateY(-0.35rem);
+    transition: 0.45s;
+}
+
+button img {
+    max-height:50px;
+}
+
+.buttons-container{
+    background-image: linear-gradient(45deg, #f7b500 25%, #ffd900 25%, #ffd900 50%, #f7b500 50%, #f7b500 75%, #ffd900 75%, #ffd900 100%);
+    background-size: 56.57px 56.57px;    
+    padding: .25rem;
+}
+.flex-hor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-width-header {
+    background-size: cover;
+    background-image: url(assets/head-stripes.jpg);
+    height: 120px;
+    width: 100%;
+    display: inline-block;
+}
+
+.screen-2-nav {
+    padding: 1rem;
+    background-color: #0000005e;
+    height: 100%;
+}
+
+.flex-hor-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-hor-left-item {
+    align-self: flex-start;
+}
+
+.full-width-header img {
+    max-width: 100px;
+    display: inherit;
+    float: left;
+}
+
+p.header-title{
+    color: #fae602;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: .5rem auto;
+
+    display: inherit;
+    float: left;
+}
+
+/*.pink-btn {
+    background-color: #ff45ff;
+}*/
+/*.blue-btn {
+    background-color: #1762c5;
+
+}*/
+
+
+@media only screen and (max-width: 1200px) {
+
+    button {
+        display: block;
+        margin: .5rem auto;
+        /*! width: 110px; */
+    }
+
+    footer {
+    background-color: #000;
+    }
+
+    .flex-center-all {
+        height:100%;
+    }
+    .flex-hor {
+        display: block;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size:1rem;
+    }
+
+    .logo-img {
+    max-width: 220px;
+    }
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
