@@ -100,11 +100,12 @@ hr {
 input, select {
     vertical-align:middle;
 }
+/*//////////////////////////////////////////////////////////*/
 /*//////////////////////// END OF CSS RESET /////////////////*/
+/*//////////////////////////////////////////////////////////*/
 
 
 /*BOX-SIZING MODEL TO BORDER*/
-
 *, *:before, *:after {
     -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box; 
@@ -117,6 +118,7 @@ html,body{
   height:100%;
   padding:0;
   margin:0;
+  background-color: transparent;
 }
 
 .flex-center-all {
@@ -128,7 +130,7 @@ html,body{
     position: fixed;
     color: #ffff;
     margin-bottom: 3rem;
-    background-color: #000000d1;
+    background-color: #000000b5;
 
 }
 
@@ -136,6 +138,12 @@ html,body{
            
 }
 */
+
+.screen-2 {
+  background-color: #000;
+  height: 100vh;
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -230,6 +238,46 @@ button img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.full-width-header {
+    background-size: cover;
+    background-image: url(assets/head-stripes.jpg);
+    height: 120px;
+    width: 100%;
+    display: inline-block;
+}
+
+.screen-2-nav {
+    padding: 1rem;
+    background-color: #0000005e;
+    height: 100%;
+}
+
+.flex-hor-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-hor-left-item {
+    align-self: flex-start;
+}
+
+.full-width-header img {
+    max-width: 100px;
+    display: inherit;
+    float: left;
+}
+
+p.header-title{
+    color: #fae602;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: .5rem auto;
+
+    display: inherit;
+    float: left;
 }
 
 /*.pink-btn {
