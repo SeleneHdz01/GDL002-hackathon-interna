@@ -375,10 +375,17 @@ p.info {
 
 
 
+.info-section {
+  background-color: #000;
+margin: 0;
+}
 
 
-
-
+#random-btn-2 {
+  display: block;
+  margin: 1rem auto 0 auto;
+  padding: 0 0 10rem 0;
+}
 
 
 
