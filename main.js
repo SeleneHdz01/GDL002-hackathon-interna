@@ -39,20 +39,18 @@ const showData = (selection) => {
     let allData = '';
     selection.forEach(element => { 
       return allData += 
-      `<div>
-        <div class="row">
-            <img class="miniature-poster" src=${element.Poster}>
-            <div class="background-poster" style="background-image: url(${element.Poster}); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed; height:300px; width: 100%;"></div>
-        </div>
-        <p class="title">Title: ${element.Title}</p>
-        <p class="info">Runtime: ${element.Runtime}</p>
-        <p class="info">Year: ${element.Year}</p>
-        <p class="info"> Genre: ${element.Genre}</p>  
-        <p class="info"> Plot: ${element.Plot}</p>
-        <p class="info"> Tipo: ${element.Type}</p>
-        </div>
-        </div>
-        </div>
+      `<div class="dinamic">
+            <div class="row">
+                <img class="miniature-poster" src=${element.Poster}>
+                <article class="item-info">
+                    <p class="title">Title: ${element.Title}</p>
+                    <p class="info">Runtime: ${element.Runtime}</p>
+                    <p class="info">Year: ${element.Year}</p>
+                    <p class="info"> Genre: ${element.Genre}</p>  
+                    <p class="info"> Plot: ${element.Plot}</p>
+                    <p class="info"> Tipo: ${element.Type}</p>
+                </article>    
+            </div>
         </div>`
     });
       document.getElementById('info').innerHTML = allData;
