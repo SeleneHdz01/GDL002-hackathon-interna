@@ -77,7 +77,7 @@ const randomBtn =() => {
 let randomAll = [];
 let i, r;
    for (i = 0; i < allContent.length; i++) randomAll[i] = i;
-   for (i = 0; i < 4; i++) {
+   for (i = 0; i < 6; i++) {
    r = Math.floor(Math.random() * randomAll.length);
    random.push(allContent[randomAll[r]]);
    randomAll.splice(r, 1);
