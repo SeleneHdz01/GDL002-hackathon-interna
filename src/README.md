@@ -20,7 +20,7 @@ El diseño de la aplicación estuvo conformada de varios procesos:
 7. Readme
 
 ### Prototipo de Baja fidelidad
-![enter image description here](https://lh3.googleusercontent.com/oY10xzvkJ_WSY_S2cTwQWuwWDDoGA43b5nkfxYPosoP20ODS7VlmGJCKsBLf1Rb11w_HWCv4yJ8h=s150
+[enter image description here](https://lh3.googleusercontent.com/oY10xzvkJ_WSY_S2cTwQWuwWDDoGA43b5nkfxYPosoP20ODS7VlmGJCKsBLf1Rb11w_HWCv4yJ8h=s150
 https://lh3.googleusercontent.com/oY10xzvkJ_WSY_S2cTwQWuwWDDoGA43b5nkfxYPosoP20ODS7VlmGJCKsBLf1Rb11w_HWCv4yJ8h
 )
 
